@@ -1,0 +1,13 @@
+body {
+  margin-top: 200px;
+}
+
+div {
+  border: 1px solid gray;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
