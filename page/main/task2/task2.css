@@ -8,6 +8,33 @@ div {
   max-width: 400px;
   width: 100%;
   display: flex;
+  color: blue;
   align-items: center;
   justify-content: center;
+}
+
+.custom-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.custom-tooltip:hover .text {
+  visibility: visible;
+  opacity: 1;
 }
